@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>My Solution | Single Price Grid Component</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    :root {
+      --clr-Cyan: hsl(179, 62%, 43%);
+      --clr-Bright-Yellow: hsl(71, 73%, 54%);
+      --clr-Light-Gray: hsl(204, 43%, 93%);
+      --clr-Grayish-Blue: hsl(218, 22%, 67%);
+      /* fonts */
+      --ff1-font-family: "Karla", sans-serif; /*  Weights: 400, 700  */
+    }
+    body {
+      background: var(--clr-Light-Gray);
+      font-family: var(--ff1-font-family);
+    }
+    .join {
+      font-weight: 700;
+      color: var(--clr-Cyan);
+    }
+    .thirty-day {
+      font-weight: 700;
+      color: var(--clr-Bright-Yellow);
+    }
+    .paragraph-one {
+      font-weight: 400;
+      color: var(--clr-Grayish-Blue);
+    }
+    .monthly {
+      font-weight: 700;
+      color: white;
+    }
+
+    .twenty-cost {
+      font-weight: 700;
+      color: white;
+      font-size: 2rem;
+    }
+    .per-month {
+      font-size: 0.9rem;
+      color: var(--clr-Grayish-Blue);
+      font-weight: 400;
+    }
+    .paragraph-two {
+      color: white;
+      font-weight: 300;
+    }
+    .why-us {
+      font-weight: 700;
+      color: white;
+    }
+    .paragraph-three {
+      color: white;
+      font-weight: 200;
+      font-size: 0.9rem;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+    }
+    .sub {
+      background: darkcyan;
+      height: 280px;
+      width: 340px;
+      border-radius: 0 0 0 0.5rem;
+    }
+    .why {
+      height: 280px;
+      background-color: var(--clr-Cyan);
+      width: 340px;
+      border-radius: 0 0 0.5rem 0;
+    }
+
+    .wrapper {
+      background: white;
+      margin: 0 auto;
+      width: 680px;
+      margin-top: 10rem;
+      height: 240px;
+      border-radius: 0.5rem 0.5rem 0 0;
+    }
+    .heading-one {
+      padding: 2rem;
+    }
+    .heading-two {
+      padding-left: 2rem;
+      padding-bottom: 1.5rem;
+    }
+    .para-one {
+      padding-left: 2rem;
+      width: 34rem;
+      line-height: 1.5rem;
+    }
+    .heading-three {
+      padding-top: 2.8rem;
+      padding-left: 2rem;
+      padding-bottom: 2rem;
+    }
+    div.cost {
+      padding-left: 2rem;
+      padding-bottom: 0.7rem;
+    }
+    .paragraph-two {
+      padding-left: 2rem;
+    }
+    .sign-button {
+      margin-top: 2.5rem;
+      margin-left: 2rem;
+      width: 17rem;
+      height: 3.2rem;
+      border: none;
+      background: var(--clr-Bright-Yellow);
+      color: white;
+      font-size: 1.1rem;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      box-shadow: -10px 0 10px 0 rgba(0, 0, 0, 0.1),
+        10px 0 10px 0 rgba(0, 0, 0, 0.1);
+    }
+    .heading-four {
+      padding-top: 2.8rem;
+      padding-left: 2rem;
+      padding-bottom: 2rem;
+    }
+    .para-three {
+      padding-left: 2rem;
+      padding-right: 4rem;
+      line-height: 1.3rem;
+    }
+    .main-main {
+      position: relative;
+      top: 5rem;
+    }
+  </style>
+  <body>
+    <div class="main-main">
+      <main class="wrapper">
+        <div class="heading-one">
+          <h2 class="join">Join our community</h2>
+        </div>
+        <div class="heading-two">
+          <h3 class="thirty-day">30-day, hassle-free money back guarantee</h3>
+        </div>
+        <div class="para-one">
+          <p class="paragraph-one">
+            Gain access to our full library of tutorials along with expert code
+            reviews. Perfect for any developers who are serious about honing
+            their skills.
+          </p>
+        </div>
+      </main>
+      <footer class="container">
+        <aside class="sub">
+          <div class="heading-three">
+            <h3 class="monthly">Monthly Subscription</h3>
+          </div>
+          <div class="cost">
+            <h2 class="twenty-cost">
+              &dollar;29 <span class="per-month"> per month</span>
+            </h2>
+          </div>
+          <div class="para-two">
+            <p class="paragraph-two">
+              Full access for less than &dollar;1 a day
+            </p>
+          </div>
+          <button class="sign-button">Sign Up</button>
+        </aside>
+
+        <section class="why">
+          <div class="heading-four">
+            <h3 class="why-us">Why Us</h3>
+          </div>
+          <div class="para-three">
+            <p class="paragraph-three">
+              Tutorials by industry experts <br />
+              Peer &amp; expert code review <br />
+              Coding exercises <br />
+              Access to our GitHub repos <br />
+              Community forum <br />
+              Flashcard decks <br />
+              New videos every week
+            </p>
+          </div>
+        </section>
+      </footer>
+    </div>
+  </body>
+</html>
